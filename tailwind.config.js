@@ -6,18 +6,21 @@ module.exports = {
   darkMode: "class",
   theme: {
     extend: {
-      // Coffee + Jaipur "Pink City" palette. Named so classes stay consistent.
+      // Palette grounded in Sanganer/Bagru block-printing near Jaipur:
+      // indigo and madder-red hand-printed on undyed cotton.
       colors: {
-        paper: "#f6f1e8",      // warm ivory background (light)
-        cream: "#fdfaf4",      // lifted card surface (light)
-        sand: "#e7dac6",       // warm borders / dividers
-        ink: "#241a10",        // espresso near-black text
-        mocha: "#6f6152",      // muted secondary text
-        clay: "#b14a2c",       // roasted-clay accent
-        "clay-deep": "#8c3a20", // accent hover (light)
-        "clay-soft": "#e0885a", // brighter accent for dark mode
-        roast: "#17110d",      // deep espresso background (dark)
-        bean: "#231a13",       // lifted surface (dark)
+        paper: "#f2ece0",        // undyed-cotton ecru background (light)
+        cream: "#faf6ec",        // lifted card surface (light)
+        sand: "#ddd0b8",         // warm khadi borders / dividers
+        ink: "#20262e",          // indigo-charcoal text (block-print ink)
+        mocha: "#6b6256",        // muted secondary text
+        indigo: "#31427c",       // Sanganer/Bagru indigo — primary accent
+        "indigo-deep": "#25325f", // accent hover (light)
+        "indigo-soft": "#93a6dd", // brighter indigo for dark mode
+        madder: "#a83e2b",       // madder-red — the roast meter's warm note
+        "madder-soft": "#d9694e", // brighter madder for dark mode
+        roast: "#12151d",        // deep indigo-night background (dark)
+        bean: "#1b2130",         // lifted surface (dark)
       },
       fontFamily: {
         display: ['Newsreader', 'ui-serif', 'Georgia', 'serif'],
@@ -25,6 +28,11 @@ module.exports = {
       },
       maxWidth: {
         content: "72rem", // shared page width
+      },
+      // A single indigo-tinted lift, in place of Tailwind's stock grey shadow.
+      // Real shadows pick up the light around them; ours leans block-print indigo.
+      boxShadow: {
+        card: "0 1px 2px rgb(32 38 46 / 0.05), 0 18px 40px -24px rgb(49 66 124 / 0.5)",
       },
     },
   },

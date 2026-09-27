@@ -28,7 +28,7 @@ A small marketing website for a specialty coffee café and roastery in C-Scheme,
 - **HTML5** — semantic structure (`header`, `nav`, `main`, `section`, `article`, `footer`).
 - **Tailwind CSS v3.4** — utility-first styling, compiled with the Tailwind CLI (not the CDN). Colours, fonts, and breakpoints live in `tailwind.config.js`.
 - **Vanilla JavaScript** — one small `js/main.js` for the dark-mode toggle, mobile menu, footer year, and contact-form validation. No libraries.
-- **Google Fonts** — Fraunces (display serif) and Hanken Grotesk (body).
+- **Google Fonts** — Newsreader (display serif) and Hanken Grotesk (body).
 
 ## Features
 

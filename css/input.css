@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ---------------------------------------------------------------
+   Base: page defaults, typography rhythm, accessibility niceties.
+---------------------------------------------------------------- */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-paper text-ink font-sans antialiased dark:bg-roast dark:text-paper;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-display font-semibold tracking-tight;
+  }
+
+  /* Consistent, visible keyboard focus everywhere. */
+  :focus-visible {
+    @apply outline-none ring-2 ring-clay ring-offset-2 ring-offset-paper dark:ring-clay-soft dark:ring-offset-roast;
+  }
+
+  /* Respect users who prefer less motion. */
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+/* ---------------------------------------------------------------
+   Components: patterns reused on every page, so they earn a class
+   instead of repeating long utility strings in the HTML.
+---------------------------------------------------------------- */
+@layer components {
+  /* Small uppercase label that sits above section headings. */
+  .eyebrow {
+    @apply inline-block text-xs font-semibold uppercase tracking-[0.2em] text-clay dark:text-clay-soft;
+  }
+
+  /* Buttons */
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-semibold transition-colors duration-200;
+  }
+  .btn-primary {
+    @apply bg-clay text-cream hover:bg-clay-deep;
+  }
+  .btn-outline {
+    @apply border border-ink/20 text-ink hover:border-clay hover:text-clay dark:border-paper/25 dark:text-paper dark:hover:border-clay-soft dark:hover:text-clay-soft;
+  }
+
+  /* Card surface used for menu items, feature blocks, etc. */
+  .card {
+    @apply rounded-2xl border border-sand bg-cream p-6 transition-shadow duration-200 dark:border-white/10 dark:bg-bean;
+  }
+
+  /* Form fields on the contact page. */
+  .field {
+    @apply w-full rounded-xl border border-sand bg-cream px-4 py-3 text-ink placeholder:text-mocha/60 transition-colors focus:border-clay dark:border-white/10 dark:bg-bean dark:text-paper;
+  }
+  .field-label {
+    @apply mb-2 block text-sm font-semibold;
+  }
+}

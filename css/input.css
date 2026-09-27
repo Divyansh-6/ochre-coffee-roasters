@@ -20,7 +20,7 @@
 
   /* Consistent, visible keyboard focus everywhere. */
   :focus-visible {
-    @apply outline-none ring-2 ring-clay ring-offset-2 ring-offset-paper dark:ring-clay-soft dark:ring-offset-roast;
+    @apply outline-none ring-2 ring-indigo ring-offset-2 ring-offset-paper dark:ring-indigo-soft dark:ring-offset-roast;
   }
 
   /* Respect users who prefer less motion. */
@@ -40,9 +40,9 @@
    instead of repeating long utility strings in the HTML.
 ---------------------------------------------------------------- */
 @layer components {
-  /* Small uppercase label that sits above section headings. */
+  /* Small label that sits above section headings. */
   .eyebrow {
-    @apply inline-block text-xs font-semibold uppercase tracking-[0.2em] text-clay dark:text-clay-soft;
+    @apply inline-block text-sm font-semibold tracking-wide text-indigo dark:text-indigo-soft;
   }
 
   /* Buttons */
@@ -50,20 +50,20 @@
     @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-semibold transition-colors duration-200;
   }
   .btn-primary {
-    @apply bg-clay text-cream hover:bg-clay-deep;
+    @apply bg-indigo text-cream hover:bg-indigo-deep;
   }
   .btn-outline {
-    @apply border border-ink/20 text-ink hover:border-clay hover:text-clay dark:border-paper/25 dark:text-paper dark:hover:border-clay-soft dark:hover:text-clay-soft;
+    @apply border border-ink/20 text-ink hover:border-indigo hover:text-indigo dark:border-paper/25 dark:text-paper dark:hover:border-indigo-soft dark:hover:text-indigo-soft;
   }
 
   /* Card surface used for menu items, feature blocks, etc. */
   .card {
-    @apply rounded-2xl border border-sand bg-cream p-6 transition-shadow duration-200 dark:border-white/10 dark:bg-bean;
+    @apply rounded-2xl border border-sand bg-cream p-6 transition-shadow duration-200 hover:shadow-card dark:border-white/10 dark:bg-bean;
   }
 
   /* Form fields on the contact page. */
   .field {
-    @apply w-full rounded-xl border border-sand bg-cream px-4 py-3 text-ink placeholder:text-mocha/60 transition-colors focus:border-clay dark:border-white/10 dark:bg-bean dark:text-paper;
+    @apply w-full rounded-xl border border-sand bg-cream px-4 py-3 text-ink placeholder:text-mocha/60 transition-colors focus:border-indigo dark:border-white/10 dark:bg-bean dark:text-paper;
   }
   .field-label {
     @apply mb-2 block text-sm font-semibold;

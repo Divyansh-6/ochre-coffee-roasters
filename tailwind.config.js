@@ -20,7 +20,7 @@ module.exports = {
         bean: "#231a13",       // lifted surface (dark)
       },
       fontFamily: {
-        display: ['Fraunces', 'ui-serif', 'Georgia', 'serif'],
+        display: ['Newsreader', 'ui-serif', 'Georgia', 'serif'],
         sans: ['"Hanken Grotesk"', 'ui-sans-serif', 'system-ui', 'sans-serif'],
       },
       maxWidth: {

@@ -1,8 +1,8 @@
 # Ochre Coffee Roasters
 
-A small marketing website for a specialty coffee café and roastery in C-Scheme, Jaipur. Hand-coded as a four-page static site — no page builder, no template — styled entirely with Tailwind CSS in a warm, editorial palette.
+A small marketing website for a specialty coffee café and roastery in C-Scheme, Jaipur. Hand-coded as a four-page static site — no page builder, no template — styled entirely with Tailwind CSS in a Jaipur block-print palette of indigo and madder on undyed-cotton neutrals.
 
-**Live site:** _add your Vercel URL here after deploying_ → `https://<your-project>.vercel.app`
+**Live site:** [ochre-coffee-roasters.vercel.app](https://ochre-coffee-roasters.vercel.app/)
 
 ## Screenshots
 

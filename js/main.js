@@ -1,5 +1,5 @@
 // Ochre Coffee Roasters — small bits of interactivity.
-// Vanilla JS, no dependencies, so every line is easy to follow and explain.
+// Vanilla JS, no dependencies.
 
 (function () {
   "use strict";
@@ -52,7 +52,7 @@
   }
 
   // --- Contact form ------------------------------------------------
-  // There's no backend for this project, so we confirm on the page
+  // No backend to post to, so we confirm on the page
   // once the browser's built-in validation passes.
   const form = document.getElementById("contact-form");
   const status = document.getElementById("form-status");
